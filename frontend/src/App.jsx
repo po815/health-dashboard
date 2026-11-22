@@ -72,7 +72,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/reports/daily?date=${date}`,
+        `https://health-dashboard-r3ih.onrender.com/api/reports/daily?date=${date}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -118,7 +118,7 @@ function App() {
 
       try {
         const response = await fetch(
-          'http://localhost:5000/api/auth/signup',
+          'https://health-dashboard-r3ih.onrender.com/api/auth/signup',
           {
             method: 'POST',
             headers: {
@@ -153,7 +153,7 @@ function App() {
 
     try {
       const response = await fetch(
-        'http://localhost:5000/api/auth/login',
+        'https://health-dashboard-r3ih.onrender.com/api/auth/login',
         {
           method: 'POST',
           headers: {
@@ -174,7 +174,7 @@ function App() {
       sessionStorage.setItem('user', JSON.stringify(data.user))
 
       const readingsResponse = await fetch(
-        'http://localhost:5000/api/readings',
+        'https://health-dashboard-r3ih.onrender.com/api/readings',
         {
           headers: {
             Authorization: `Bearer ${data.token}`,
@@ -232,7 +232,7 @@ function App() {
 
     try {
       const response = await fetch(
-        'http://localhost:5000/api/readings',
+        'https://health-dashboard-r3ih.onrender.com/api/readings',
         {
           method: 'POST',
           headers: {
@@ -285,7 +285,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/readings/${id}`,
+        `https://health-dashboard-r3ih.onrender.com/api/readings/${id}`,
         {
           method: 'DELETE',
           headers: {
